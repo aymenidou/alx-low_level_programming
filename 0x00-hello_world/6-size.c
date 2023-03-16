@@ -1,8 +1,9 @@
 #include <stdio.h>
 
-/*
- * print type size
- * return 0
+/**
+ * main - entry point
+ * description: print type size
+ * return: 0
  */
 
 int main(void)
