@@ -1,9 +1,9 @@
 #include <stdio.h>
 
 /*
- * description :
- * use puts
- * return 0
+ * main - Entry point
+ * description : use puts
+ * Return : 0
  */
 
 int main(void)
