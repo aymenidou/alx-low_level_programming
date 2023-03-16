@@ -1,6 +1,7 @@
 #include <stdio.h>
 
 /*
+ * description :
  * use puts
  * return 0
  */
