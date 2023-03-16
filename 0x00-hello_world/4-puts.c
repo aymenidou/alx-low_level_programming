@@ -1,7 +1,7 @@
 #include <stdio.h>
 
-/*
- * main - main
+/**
+ * main - main function
  *
  * description : use puts
  *
