@@ -4,7 +4,7 @@
 /**
  * main - Entry
  * Description: write to console without puts or printf
- * Return: 1 
+ * Return: 1
  */
 int main(void)
 {
