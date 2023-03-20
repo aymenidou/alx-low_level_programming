@@ -13,10 +13,13 @@ int n3 = 48;
 int n4 = 48;
 while (n1 <= 57)
 {
+n2 = 48;
 while (n2 <= 57)
 {
+n3 = 48;
 while (n3 <= 57)
 {
+n4 = 48;
 while (n4 <= 57)
 {
 if (n1 != n3 && n2 != n4)
