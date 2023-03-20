@@ -19,7 +19,7 @@ while (n3 <= 57)
 {
 while (n4 <= 57)
 {
-if (n1 != n3 & n2 != n4)
+if (n1 != n3 && n2 != n4)
 {
 putchar(n1);
 putchar(n2);
