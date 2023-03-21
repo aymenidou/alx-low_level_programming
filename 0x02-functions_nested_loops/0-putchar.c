@@ -7,7 +7,7 @@
  */
 int main(void)
 {
-	char msg[] = "_putchar";
+	char msg[] = "_putchar\n";
 	unsigned long int i = 0;
 
 	while (i < sizeof(msg))
@@ -16,6 +16,6 @@ int main(void)
 		_putchar(msg[i]);
 		i++;
 	}
-	_putchar('\n');
+
 	return (0);
 }
