@@ -16,7 +16,7 @@ int main(void)
 		tmp = j;
 		j += i;
 		i = tmp;
-		printf("%.f",j);
+		printf("%.f", j);
 		if (k != 50)
 			printf(", ");
 	}
