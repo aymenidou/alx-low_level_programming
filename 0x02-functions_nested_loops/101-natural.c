@@ -4,9 +4,10 @@
 /**
  * main - entry point
  * Description: print sum of multiplication of 3 or 5 below 1024
+ * Return: 0
  */
 
-void main(void)
+int main(void)
 {
 	int sum = 0;
 
@@ -22,4 +23,5 @@ void main(void)
 		}
 	}
 	printf("%d\n", sum);
+	return (0);
 }
