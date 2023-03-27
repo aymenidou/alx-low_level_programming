@@ -9,7 +9,7 @@ void print_rev(char *s)
 {
 	int num = 0, i;
 
-	while (s[i] != '\0')
+	while (s[num] != '\0')
 	{
 		num++;
 	}
