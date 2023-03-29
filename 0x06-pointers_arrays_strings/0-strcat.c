@@ -10,8 +10,8 @@ int _strlen(char *str)
 	int i = 0;
 
 	while (str[i] != '\0')
-{
-	i++;
+	{
+		i++;
 	}
 	return (i);
 }
@@ -24,13 +24,12 @@ int _strlen(char *str)
 
 char *_strcat(char *dest, char *src)
 {
-int i = _strlen(dest), j = _strlen(src), k;
+	int i = _strlen(dest), j = _strlen(src), k;
 
-for (k = i; k < i + j; k++)
-{
-dest[k] = src[k - i];
-dest[i + j] = '\0';
-return (dest);
-
-
+	for (k = i; k < i + j; k++)
+	{
+		dest[k] = src[k - i];
+		dest[i + j] = '\0';
+	}
+	return (dest);
 }
