@@ -16,17 +16,22 @@ int _strlen(char *str)
 	return (i);
 }
 /**
- * *_strcat - concat string
+ * *_strncat - concat string
  *@dest: string destination
  *@src: string source
+ *@n: integer specifying n bytes
  *Return: string concatenation
  */
 
-char *_strcat(char *dest, char *src)
+char *_strncat(char *dest, char *src, int n)
 {
+	if (n <= 0)
+	{
+		return (dest);
+	}
 	int i = _strlen(dest), j = _strlen(src), k;
 
-	for (k = 0; src[k] != '\0'; k++)
+	for (k = 0; src[k] != '\0' && k < n; k++)
 	{
 		dest[i + k] = src[k];
 	}
