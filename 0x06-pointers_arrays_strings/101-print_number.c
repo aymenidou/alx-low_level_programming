@@ -11,7 +11,7 @@ void print_number(int n)
 
 	if (n < 0)
 	{
-		i *= -n;
+		i = -n;
 		_putchar('-');
 	}
 	if (i > 9)
