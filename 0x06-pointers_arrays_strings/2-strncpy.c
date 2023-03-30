@@ -26,17 +26,23 @@ int _strlen(char *str)
 
 char *_strncpy(char *dest, char *src, int n)
 {
-	int j;
+	int i = _strlen(dest), j, k = _strlen(src);
 
 	if (n <= 0)
 	{
 		return (dest);
 	}
 
-	for (j = 0; src[j] != '\0' && j < n; j++)
+	for (j = 0; j < i && j < n; j++)
 	{
+		if (j >= k)
+		{
+			dest[j] = '\0';
+		}
+		else
+		{
 		dest[j] = src[j];
+		}
 	}
-	dest[j] = '\0';
 	return (dest);
 }
