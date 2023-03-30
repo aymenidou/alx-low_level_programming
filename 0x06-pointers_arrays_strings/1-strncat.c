@@ -25,12 +25,12 @@ int _strlen(char *str)
 
 char *_strncat(char *dest, char *src, int n)
 {
-	if (n <= 0)
-	{
-		return (dest);
-	}
 	int i = _strlen(dest), k;
 
+	if (n <= 0)
+	{
+	return (dest);
+	}
 	for (k = 0; src[k] != '\0' && k < n; k++)
 	{
 		dest[i + k] = src[k];
