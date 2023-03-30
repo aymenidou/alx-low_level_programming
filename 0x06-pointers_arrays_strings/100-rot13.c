@@ -20,6 +20,7 @@ while (normalChar[j] != '\0')
 if (str[i] == normalChar[j])
 {
 str[i] = rot13Char[j];
+break;
 }
 j++;
 }
