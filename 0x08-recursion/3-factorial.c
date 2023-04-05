@@ -3,7 +3,7 @@
 /**
  * factorial - calculate factotial
  * @n: input integer
- * Return factorial
+ * Return: factorial
  */
 int factorial(int n)
 {
