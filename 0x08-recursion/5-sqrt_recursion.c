@@ -2,17 +2,6 @@
 
 
 /**
- * _sqrt_recursion - square root by recursion
- * @n: integer input
- * Return: calculate square root
- */
-
-int _sqrt_recursion(int n)
-{
-return (find_square(n, 1));
-}
-
-/**
  * find_square - test numbers to find square
  * @n: input int
  * @m: input int
@@ -31,4 +20,15 @@ int find_square(int n, int m)
 		return (m);
 	}
 	return (find_square(n, m + 1));
+}
+
+/**
+ * _sqrt_recursion - square root by recursion
+ * @n: integer input
+ * Return: calculate square root
+ */
+
+int _sqrt_recursion(int n)
+{
+return (find_square(n, 1));
 }
