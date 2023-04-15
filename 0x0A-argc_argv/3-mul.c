@@ -4,7 +4,7 @@
  * main - entry point
  * @argc: args count
  * @argv: args
- * Return: 0
+ * Return: 1
  */
 int main(int argc, char **argv)
 {
@@ -16,5 +16,5 @@ int main(int argc, char **argv)
 	{
 		printf("Error\n");
 	}
-	return (0);
+	return (1);
 }
