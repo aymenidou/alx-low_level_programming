@@ -23,8 +23,8 @@ int main(int argc, char **argv)
 		for (j = 0; argv[i][j] != '\0'; j++)
 		{
 
-			x = atoi(argv[i][j]);
-			if (!isdigit(atoi(x)))
+			x = argv[i][j];
+			if (!isdigit(x))
 			{
 				printf("Error\n");
 				return (1);
