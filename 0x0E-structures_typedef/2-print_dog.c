@@ -1,5 +1,5 @@
 #include "dog.h"
-
+#include <stdio.h>
 /**
  * print_dog - print a dog
  * @d: input dog
@@ -10,7 +10,7 @@ void print_dog(struct dog *d)
 	if (d)
 	{
 		printf("Name: ");
-		if (d->name)
+		if (d->namie)
 			printf("%s\n", d->name);
 		else
 			printf("(nil)\n");
