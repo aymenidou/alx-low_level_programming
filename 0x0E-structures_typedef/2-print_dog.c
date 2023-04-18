@@ -10,7 +10,7 @@ void print_dog(struct dog *d)
 	if (d)
 	{
 		printf("Name: ");
-		if (d->namie)
+		if (d->name)
 			printf("%s\n", d->name);
 		else
 			printf("(nil)\n");
