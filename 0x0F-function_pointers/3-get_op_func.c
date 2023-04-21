@@ -5,7 +5,7 @@
 /**
   * get_op_func - entry point
   * @s: operator
-  * Return: 
+  * Return: return pointer to function
   */
 int (*get_op_func(char *s))(int, int)
 {

@@ -6,7 +6,7 @@
   * main - entry point
   * @argc: args count
   * @argv: args array
-  * Return: 
+  * Return: status
   */
 int main(int argc, char *argv[])
 {
