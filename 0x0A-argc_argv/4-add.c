@@ -11,20 +11,18 @@
 int main(int argc, char **argv)
 {
 	int i, j, r = 0;
-	char *x;
 
 	if (argc == 1)
 	{
 		printf("0\n");
 		return (0);
 	}
-	for (i = 1; argv[i] != '\0' ; i++)
+	for (i = 1; argv[i] ; i++)
 	{
 		for (j = 0; argv[i][j] != '\0'; j++)
 		{
 
-			x = argv[i][j];
-			if (!isdigit(x))
+			if (!isdigit(argv[i][j]))
 			{
 				printf("Error\n");
 				return (1);
