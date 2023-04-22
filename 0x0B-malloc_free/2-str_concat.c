@@ -26,7 +26,6 @@ char *str_concat(char *s1, char *s2)
 		i++;
 		j++;
 	}
-	i++;
 	str = malloc((i * sizeof(char)) + 1);
 
 	for (j = 0; s1[j] != '\0'; j++)
