@@ -63,5 +63,9 @@ dog_t *new_dog(char *name, float age, char *owner)
 			d->owner[idx] = owner[idx];
 		}
 	}
+	else
+	{
+		free(d);
+	}
 	return (d);
 }
