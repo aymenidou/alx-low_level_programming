@@ -1,7 +1,7 @@
 #include "variadic_functions.h"
 
 /**
- * prit_all - entry point
+ * print_all - entry point
  * @format: var format
  */
 
