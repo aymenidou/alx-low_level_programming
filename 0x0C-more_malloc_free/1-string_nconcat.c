@@ -1,6 +1,21 @@
 #include "main.h"
 
 /**
+ * _strlen - entry point
+ * @s: input string
+ * Return: string length
+ */
+int _strlen(char *s)
+{
+	int i = 0;
+
+	while (s[i] != '\0')
+	{
+		i++;
+	}
+	return (i);
+}
+/**
  * *string_nconcat - concat 2 strings
  * @s1: first string
  * @s2: second string
@@ -21,16 +36,9 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	{
 		s2 = "";
 	}
-
-	while (s1[s1len] != '\0')
-	{
-		s1len++;
-	}
-	while (s2[s2len] != '\0')
-	{
-		s2len++;
-	}
-	if(n >= s2len)
+	s1len = _strlen(s1);
+	s2len = _strlen(s2);
+	if (n >= s2len)
 	{
 		n = s2len;
 	}
