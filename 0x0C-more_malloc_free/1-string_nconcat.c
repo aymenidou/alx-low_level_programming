@@ -52,7 +52,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 			i++;
 		}
 		i = 0;
-		while (s2[i] != '\0')
+		while (s2[i] != '\0' && i < n)
 		{
 			concatstr[s1len] = s2[i];
 			s1len++;
