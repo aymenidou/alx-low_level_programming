@@ -4,7 +4,7 @@
  * get_nodeint_at_index - entry point
  * @head: list head
  * @index: node index
- * Return: 
+ * Return: return pointer to wanted node
  */
 listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 {
@@ -21,5 +21,5 @@ listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 			head = head->next;
 		}
 	}
-	return head;
+	return (head);
 }
