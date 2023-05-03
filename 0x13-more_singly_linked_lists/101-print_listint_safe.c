@@ -8,7 +8,8 @@
  * @new: next node
  * Return: pointer to the new list
  */
-const listint_t **_filter_list(const listint_t **list, size_t size, const listint_t *new)
+const listint_t **_filter_list(const listint_t **list,
+		size_t size, const listint_t *new)
 {
 	size_t i;
 	const listint_t **newlist;
@@ -21,8 +22,8 @@ const listint_t **_filter_list(const listint_t **list, size_t size, const listin
 	}
 	for (i = 0; i < size - 1; i++)
 	{
-		/** check if there is any previous node
-		 * that equals the actual node */
+		/* check if there is any previous node */
+		/* that equals the actual node */
 		newlist[i] = list[i];
 	}
 	newlist[i] = new;
