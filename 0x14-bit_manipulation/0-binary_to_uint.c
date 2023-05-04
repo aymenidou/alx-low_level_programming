@@ -5,7 +5,7 @@
  * @s: input string
  * Return: string size
  */
-unsigned int _strlen(char *s)
+unsigned int _strlen(const char *s)
 {
 	unsigned int i = 0, one = 0;
 
@@ -37,7 +37,7 @@ unsigned int _strlen(char *s)
  * @n: the power
  * Return: two to the power of n
  */
-unsigned int power_two(int n)
+unsigned int power_two(unsigned int n)
 {
 	unsigned int i, r = 1;
 
