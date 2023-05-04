@@ -1,5 +1,11 @@
 #include "main.h"
 
+/**
+ * get_bit - entry point
+ * @n: input int
+ * @index: bit index
+ * Return: bit at index
+ */
 int get_bit(unsigned long int n, unsigned int index)
 {
 	if (index >= (sizeof(unsigned long int) * 8))
