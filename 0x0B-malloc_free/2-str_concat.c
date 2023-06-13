@@ -8,13 +8,13 @@
 
 int _strlen(char *c)
 {
-        int i = 0;
+	int i = 0;
 
-        while (c[i] != '\0')
-        {
-                i++;
-        }
-        return (i);
+	while (c[i] != '\0')
+	{
+		i++;
+	}
+	return (i);
 }
 
 
@@ -44,7 +44,7 @@ char *str_concat(char *s1, char *s2)
 		{
 			p[i] = s1[i];
 		}
-		for (j = 0; s2[j] != '\0'; j++ ,i++)
+		for (j = 0; s2[j] != '\0'; j++, i++)
 		{
 			p[i] = s2[j];
 		}
