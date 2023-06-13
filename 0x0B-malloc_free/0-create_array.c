@@ -1,7 +1,7 @@
 #include "main.h"
 
 /*
- * *create_array - entry point
+ * create_array - entry point
  * @size: array size
  * @c: character
  * Return: initialized array
