@@ -1,6 +1,6 @@
 #include "main.h"
 
-/*
+/**
  * create_array - entry point
  * @size: array size
  * @c: character
