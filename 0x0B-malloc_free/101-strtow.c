@@ -51,7 +51,7 @@ char **strtow(char *str)
 	for (i = 0; i < wordlen; i++)
 	{
 		letters = 0;
-		for (j = space = 0, str[j] != '\0'; j++)
+		for (j = space = 0; str[j] != '\0'; j++)
 		{
 			if (str[j] == ' ')
 			{
@@ -71,5 +71,5 @@ char **strtow(char *str)
 			}
 		}
 	}
-
+	return (array);
 }
