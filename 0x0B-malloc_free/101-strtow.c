@@ -34,35 +34,25 @@ int wordscount(char *str)
 
 char **strtow(char *str)
 {
-	int wordlen, i, j, space, letters, k;
+	int wordlen, i, j, space = 0, letters, k;
 	char **array;
 
 	if (str == NULL || str[0] == '\0')
-	{
 		return (NULL);
-	}
 	wordlen = wordscount(str);
 	array = malloc(sizeof(char *) * (wordlen + 1));
 	if (wordlen == 0 || array == NULL)
-	{
 		return (NULL);
-	}
-	space = 0;
 	for (i = 0; i < wordlen; i++)
 	{
 		letters = 0;
 		for (j = space; str[j] != '\0'; j++)
 		{
 			if (str[j] == ' ')
-			{
 				/** calculate spaces */
 				space++;
-			}
 			else
-			{
 				letters++;
-			}
-
 			if (str[j] != ' ' && (str[j + 1] == ' ' || str[j + 1] == '\0'))
 			{
 				/** end of a word */
