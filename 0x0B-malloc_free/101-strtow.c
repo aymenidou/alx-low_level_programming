@@ -68,7 +68,7 @@ char **strtow(char *str)
 				/** end of a word */
 				array[i] = malloc((j - space + 2) * sizeof(char));
 				/** allocate memory for the word */
-				for (k = 0; k <= letters; k++)
+				for (k = 0; k < letters; k++)
 				{
 					array[i][k] = str[j - letters + 1 + k];
 				}
