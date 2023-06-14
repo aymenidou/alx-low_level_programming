@@ -1,5 +1,4 @@
 #include <stdlib.h>
-
 /**
  * wordscount - function to count string words
  * @str: input string
@@ -35,7 +34,7 @@ int wordscount(char *str)
 
 char **strtow(char *str)
 {
-	int wordlen, i, j, space, letters;
+	int wordlen, i, j, space, letters, k;
 	char **array;
 
 	if (str == NULL || str[0] == '\0')
@@ -48,10 +47,11 @@ char **strtow(char *str)
 	{
 		return (NULL);
 	}
+	space = 0;
 	for (i = 0; i < wordlen; i++)
 	{
 		letters = 0;
-		for (j = space = 0; str[j] != '\0'; j++)
+		for (j = space; str[j] != '\0'; j++)
 		{
 			if (str[j] == ' ')
 			{
@@ -63,11 +63,17 @@ char **strtow(char *str)
 				letters++;
 			}
 
-			if (str[j] != ' ' && (str[j] == ' ' || str[j] == '\0'))
+			if (str[j] != ' ' && (str[j + 1] == ' ' || str[j + 1] == '\0'))
 			{
 				/** end of a word */
 				array[i] = malloc((j - space + 2) * sizeof(char));
 				/** allocate memory for the word */
+				for (k = 0; k <= letters; k++)
+				{
+					array[i][k] = str[j - letters + 1 + k];
+				}
+				space += letters;
+				break;
 			}
 		}
 	}
