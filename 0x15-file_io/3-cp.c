@@ -11,6 +11,7 @@ void copying(int fd1, int fd2, char *av1, char *av2)
 {
 	int rl, rw;
 	char mybuff[1024];
+
 	while ((rl = read(fd1, mybuff, 1024)) > 0)
 	{
 		rw = write(fd2, mybuff, rl);
@@ -37,6 +38,7 @@ void copying(int fd1, int fd2, char *av1, char *av2)
 int main(int ac, char **av)
 {
 	int fd1, fd2, c1, c2;
+
 	if (ac != 3)
 	{
 		dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
